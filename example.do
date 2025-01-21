@@ -2,14 +2,14 @@ clear all
 mata mata clear
 
 // import variable labels
-import excel "./example_data/Chetty_Data_Labels.xlsx", sheet("Sheet1") firstrow case(lower) clear
+import excel "./chetty_data_labels.xlsx", sheet("Sheet1") firstrow case(lower) clear
 local i 0
 foreach v of varlist * {
     local lab`++i' = `v'[1]
 }
 
 // import data
-import excel "./example_data/Chetty_Data_1.xlsx", sheet("Sheet1") firstrow case(lower) clear
+import excel "./chetty_data_1.xlsx", sheet("Sheet1") firstrow case(lower) clear
 
 // assign variable labels
 local i 0

@@ -116,7 +116,7 @@ If you have suggestions or want to report problems, please create a new issue in
 {title:References}
 
 {marker bbv2025}{...}
-{phang}Becker, Sascha O., P. David Boll and Hans-Joachim Voth "SPURious No More: A Practitioner's Guide to Spatial Unit Roots in Regressions", 2025.
+{phang}Becker, Sascha O., P. David Boll and Hans-Joachim Voth "Spatial Unit Roots in Regressions: A Practitioner's Guide and a Stata Package", 2025.
 
 {marker mw2022}{...}
 {phang}Müller, Ulrich K. and Mark W. Watson "Spatial Correlation Robust Inference", Econometrica 90 (2022), 2901–2935. {browse "https://www.princeton.edu/~umueller/SHAR.pdf"}.

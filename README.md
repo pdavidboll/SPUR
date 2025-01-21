@@ -1,6 +1,6 @@
 # SPUR
 
----
+## Installation
 
 Installation from GitHub:
 
@@ -13,5 +13,6 @@ If you *also* want to download the example data and do-file (will be saved to th
 Then, you can run the example do-file:
 
     . do example
----
+
+## References
 

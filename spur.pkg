@@ -24,3 +24,6 @@ F _spurtest_i0.ado
 F _spurtest_i1resid.ado
 F _spurtest_i0resid.ado
 F lspur.mlib
+F example.do 
+F example_data/Chetty_Data_1.xlsx
+F example_data/Chetty_Data_Labels.xlsx

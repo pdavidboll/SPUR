@@ -97,6 +97,14 @@ foreach var of varlist am `myvars' {
 
 }
 
+// check if texdoc installed
+cap which texdoc
+if _rc {
+	display as error in smcl `"Please install package {it:texdoc} from SSC in order to produce the Latex table"' _newline ///
+        `"you can do so by clicking this link: {stata "ssc install texdoc, replace":auto-install texdoc}"'
+    exit 199
+}
+
 
 // write to Latex table
 texdoc init "chetty_replication.tex", replace force

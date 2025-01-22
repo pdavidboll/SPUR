@@ -4,6 +4,8 @@ This package implements methods for diagnosing and correcting spatial unit roots
 
 **When using this code, please cite [Becker, Boll and Voth (2025) ??????]().**
 
+If you encounter any issues or have any questions, please open an issue on GitHub or contact the authors.
+
 ## Installation
 
 Installation from GitHub:

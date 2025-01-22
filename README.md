@@ -35,6 +35,7 @@ spurtransform am, prefix("h_") latlong
 spurhalflife am, latlong                
 
 ```
+For details, see the help files, as well as [Becker, Boll and Voth (2025) ??????]().
 
 ## References
 

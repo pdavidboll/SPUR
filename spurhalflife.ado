@@ -7,6 +7,14 @@ program define spurhalflife, rclass
 	syntax varname(numeric) [if] [in] , [q(int 15) nrep(int 100000) Level(real 95) latlong NORMdist]
 	marksample touse
 	
+	// check moremata installed
+	cap which moremata.hlp
+	if _rc {
+		display as error in smcl `"Please install package {it:moremata} from SSC in order to use this command;"' _newline ///
+        `"you can do so by clicking this link: {stata "ssc install moremata, replace":auto-install moremata}"'
+		exit 199
+	}
+	
 	tempname ci_l ci_u max_dist
 	
 	if `level' >= 100 | `level' <= 0 {

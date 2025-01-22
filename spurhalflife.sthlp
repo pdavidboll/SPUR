@@ -37,6 +37,9 @@ This command implements a method to construct confidence sets about the half-lif
 Note: For this command (and all other commands in this package) to work, the spatial coordinates must be stored in the variables {it:s_*}, where * is a positive integer. This is for consistency with the {cmd:scpc} command developed by {help spurtest##mw2022:Müller and Watson (2022, 2023)} (available from Ulrich Müller's website), which this package is designed to work alongside. If the option latlong is specified, {it:s_1} is interpreted as latitude and {it:s_2} as longitude, and no other {it:s_*} variables may be present. If the option is not
 specified, the {it:p} {it:s_*} variables present are interpreted as coordinates in {it:p}−dimensional Euclidean space.
 
+{pstd}
+Note: This command and all others in this package rely on the {cmd: moremata} package by Ben Jann, which can be installed from SSC: {stata "ssc install moremata, replace":auto-install moremata}.
+
 
 {marker options}{...}
 {title:Options}

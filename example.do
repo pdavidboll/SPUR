@@ -1,6 +1,14 @@
 clear all
 mata mata clear
 
+// check if scpc installed
+cap which scpc
+if _rc {
+	display as error in smcl `"Please install package {it:scpc} in order to run this do-file"' _newline ///
+        `"which you can find under: {browse "https://github.com/ukmueller/SCPC/"}"'
+    exit 199
+}
+
 // import variable labels
 import excel "./chetty_data_labels.xlsx", sheet("Sheet1") firstrow case(lower) clear
 local i 0

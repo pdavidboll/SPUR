@@ -6,6 +6,14 @@ program spurtransform, sortpreserve
     version 14
  	syntax varlist(numeric) [if] [in] , PREfix(string) [ transformation(string) radius(real -1) clustvar(varname) latlong Replace separately] 
 	
+	// check moremata installed
+	cap which moremata.hlp
+	if _rc {
+		display as error in smcl `"Please install package {it:moremata} from SSC in order to use this command;"' _newline ///
+        `"you can do so by clicking this link: {stata "ssc install moremata, replace":auto-install moremata}"'
+		exit 199
+	}
+	
 	// check correct specification of options
 	if "`transformation'"=="" {
 		local transformation "lbmgls"

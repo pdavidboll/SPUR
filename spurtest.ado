@@ -4,6 +4,15 @@ mata mata set matastrict on
 
 program spurtest, prop(twopart)
 	version 14
+	
+	// check moremata installed
+	cap which moremata.hlp
+	if _rc {
+		display as error in smcl `"Please install package {it:moremata} from SSC in order to use this command;"' _newline ///
+        `"you can do so by clicking this link: {stata "ssc install moremata, replace":auto-install moremata}"'
+		exit 199
+	}
+	
 	local alltests i1 i0 i1resid i0resid
 
 	local test : word 1 of `0'

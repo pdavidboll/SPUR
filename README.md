@@ -14,7 +14,7 @@ If you *also* want to download the example data and do-file (will be saved to th
 
     . net get spur, replace from(https://raw.githubusercontent.com/pdavidboll/spur/main/)
 
-Then, you can run the example do-file, which reproduces Table 1 from [Müller and Watson (2024)](https://www.princeton.edu/~umueller/SPUR.pdf) based on the data from [Chetty et. al. (2014)](https://doi.org/10.1093/qje/qju022). 
+Then, you can run the example do-file, which reproduces Table 1 from [Müller and Watson (2024)](https://www.princeton.edu/~umueller/SPUR.pdf) based on the data from [Chetty et. al. (2014)](https://doi.org/10.1093/qje/qju022) (see [Becker, Boll and Voth (2025) ??????]() for details):
 
     . do example
 

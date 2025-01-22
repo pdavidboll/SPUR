@@ -20,6 +20,22 @@ Then, you can run the example do-file, which reproduces Table 1 from [Müller an
 
     . do example
 
+## Basic Usage
+
+The package is made up of three commands: `spurtest`, `spurtransform`, and `spurhalflife`. Example uses of these commands are shown below.
+
+```stata
+// Test the null hypothesis of a spatial unit root in the variable am
+spurtest i1 am, latlong
+
+// Transform the variable am to remove the spatial unit root and save the transformed variable as h_am
+spurtransform am, prefix("h_") latlong
+
+// Construct a confindence interval for the spatial half-life of the transformed variable am
+spurhalflife am, latlong                
+
+```
+
 ## References
 
 Becker, Sascha O., P. David Boll and Hans-Joachim Voth "Spatial Unit Roots in Regressions: A Practitioner's Guide and a Stata Package", 2025.

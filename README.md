@@ -1,4 +1,4 @@
-# SPUR
+# `spur`: A Stata Package around Spatial Unit Roots in Regressions
 
 ## Installation
 

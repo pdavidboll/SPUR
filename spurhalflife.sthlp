@@ -34,8 +34,13 @@ This command implements a method to construct confidence sets about the half-lif
 {cmd:spurhalflife} is part of a package of commands that also includes {cmd:spurtest} and {cmd:spurtransform}. A practical guide to these methods is provided in a paper accompanying this implementation ({help spurtest##bbv2025:Becker et. al (2025)}), please cite this paper when using this code.
 
 {pstd}
-Note: For this command (and all other commands in this package) to work, the spatial coordinates must be stored in the variables {it:s_*}, where * is a positive integer. This is for consistency with the {cmd:scpc} command developed by {help spurtest##mw2022:Müller and Watson (2022, 2023)} (available from Ulrich Müller's website), which this package is designed to work alongside. If the option latlong is specified, {it:s_1} is interpreted as latitude and {it:s_2} as longitude, and no other {it:s_*} variables may be present. If the option is not
-specified, the {it:p} {it:s_*} variables present are interpreted as coordinates in {it:p}−dimensional Euclidean space.
+Note: For this command (and all other commands in this package) to work, the spatial coordinates must be stored in the variables {it:s_*}, where * is a positive integer. This is for consistency with the {cmd:scpc} command developed by {help spurtest##mw2022:Müller and Watson (2022, 2023)} (available from Ulrich Müller's website), which this package is designed to work alongside. 
+
+{phang2}
+If the option {opt latlong} is specified, {it:s_1} is interpreted as latitude and {it:s_2} as longitude, and no other {it:s_*} variables may be present. Latitude and longitude are expected in decimal degrees (i.e., lat lies in [-90, 90] and lon in [-180, 180]).
+
+{phang2}
+If the option is not specified, the {it:p} {it:s_*} variables present are interpreted as coordinates in {it:p}−dimensional Euclidean space. This is appropriate for projected coordinates.
 
 {pstd}
 Note: This command and all others in this package rely on the {cmd: moremata} package by Ben Jann, which can be installed from SSC: {stata "ssc install moremata, replace":auto-install moremata}.

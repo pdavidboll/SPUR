@@ -1,18 +1,16 @@
 # `spur`: A Stata Package around Spatial Unit Roots
 
-This package implements methods for diagnosing and correcting spatial unit roots developed by Müller and Watson (2024). A practical guide to these methods and the Stata implementation can be found in [Becker, Boll and Voth (2025)](https://warwick.ac.uk/fac/soc/economics/research/workingpapers/2025/twerp_1541-_becker.pdf).
+This package implements methods for diagnosing and correcting spatial unit roots developed by Müller and Watson (2024). A practical guide to these methods and the Stata implementation can be found in [Becker, Boll and Voth (2025)](https://pauldavidboll.com/SPUR_Stata_Journal_website.pdf).
 
-**When using this code, please cite [Becker, Boll and Voth (2025)](https://warwick.ac.uk/fac/soc/economics/research/workingpapers/2025/twerp_1541-_becker.pdf):**
+**When using this code, please cite [Becker, Boll and Voth (2025)](https://pauldavidboll.com/SPUR_Stata_Journal_website.pdf):**
 
 ```bibtex
-@TechReport{becker2025,
-  author={Becker, Sascha O. and Boll, P. David and Voth, Hans-Joachim},
-  title={Spatial Unit Roots in Regressions: A Practitioner's Guide and a Stata Package},
-  year=2025,
-  institution={University of Warwick, Department of Economics},
-  type={The Warwick Economics Research Paper Series (TWERPS)},
-  url={https://warwick.ac.uk/fac/soc/economics/research/workingpapers/2025/twerp_1541-_becker.pdf},
-  number={1541},
+@Article{becker2025,
+  author    = {Becker, Sascha O. and Boll, P. David and Voth, Hans-Joachim},
+  title     = {Testing and Correcting for Spatial Unit Roots in Regression Analysis},
+  journal   = {Stata Journal},
+  year      = {forthcoming},
+  note      = {Forthcoming}
 }
 ```
 
@@ -51,7 +49,7 @@ For details, see the help files, as well as [Becker, Boll and Voth (2025)](https
 
 ## References
 
-Becker, Sascha O., P. David Boll and Hans-Joachim Voth "Spatial Unit Roots in Regressions: A Practitioner's Guide and a Stata Package",  The Warwick Economics Research Paper Series (TWERPS) 1541 (2025), University of Warwick, Department of Economics.
+Becker, Sascha O., P. David Boll and Hans-Joachim Voth "Testing and Correcting for Spatial Unit Roots in Regression Analysis", Forthcoming at the Stata Journal.
 
 Chetty, Raj, Nathaniel Hendren, Patrick Kline, Emmanuel Saez "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States" , The Quarterly Journal of Economics 129(4) (2014), 1553–1623, https://doi.org/10.1093/qje/qju022
 
